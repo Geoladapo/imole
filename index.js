@@ -15,6 +15,8 @@ app.use(express.json());
 
 app.use('/api', ragRoutes);
 
+app.get('/', (req, res) => res.send('Hello from Imole!'));
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
