@@ -14,7 +14,7 @@ export const generateResponse = async (req, res) => {
 
         console.log("Response received from RAG server");
 
-        res.json({message: response.data});
+        res.json({message: response.data.message});
 
     } catch (error) {
         console.error("Unexpected Error Occurred", error);
